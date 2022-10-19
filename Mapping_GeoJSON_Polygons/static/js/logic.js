@@ -31,17 +31,20 @@ L.control.layers(baseMaps).addTo(map);
 let torontoHoods = "https://raw.githubusercontent.com/mbandyo/Mapping_Earthquakes/main/torontoNeighborhoods.json";
 // Create custom style
 let myStyle = {
-  lines: "blue",
+  color: "blue",
   fillColor: "yellow",
   weight: 1
 }
 
 // Grabbing our GeoJSON data
+
+// Grabbing our GeoJSON data
 d3.json(torontoHoods).then(function(data) {
-  console.log(data, {
-    style: myStyle, onEachFeature: function(feature, layer){
-      layer.bindPopup("<h3>" + "Neighborhood: "+ Feature.properties.AREA_NAME + "</h3>");
-    }});
-// Creating a GeoJSON layer with the retrieved data.
-L.geoJSON(data).addTo(map);
+  console.log(data);
+  L.geoJSON(data,{
+    style: myStyle, 
+    onEachFeature: function(feature, layer){
+        layer.bindPopup("<h2>" + "Neighborhood: " + feature.properties.AREA_NAME + "</h2>");
+    }
+  }).addTo(map);
 });
