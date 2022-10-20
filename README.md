@@ -10,6 +10,7 @@ The bottom right legend describes the magnitude of the earthquakes. Also the top
 * Street view
 * Satellite View 
 * Dark base tile </br>
+
 The overlays consists of the following layers:
 * All recorded earthquakes in the past week
 * Tectonic plates division
