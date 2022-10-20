@@ -9,7 +9,7 @@ The map shows streetmap and has overlays for tectonic plates, all recorded earth
 The bottom right legend describes the magnitude of the earthquakes. Also the top right provides the options for base map including 
 * Street view
 * Satellite View 
-* Dark base tile
+* Dark base tile </br>
 The overlays consists of the following layers:
 * All recorded earthquakes in the past week
 * Tectonic plates division
